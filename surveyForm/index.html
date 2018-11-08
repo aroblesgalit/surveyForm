@@ -1,0 +1,121 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<div class="container-fluid">
+  <form id="survey-form">
+    <h1 id="title" class="text-center">Survey Form</h1>
+    <p id="description" class="text-center">Tell me about you</p>
+
+    <!-- Name, Email, Phone -->
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="row">
+          <div class="col-md-4">
+            <label for="name" id="name-label">*Name:</label>
+          </div>
+          <div class="col-md-8">
+            <input id="name" class="form-control" type="text" name="name" placeholder="Full Name" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <label for="email" id="email-label">*Email:</label>
+          </div>
+          <div class="col-md-8">
+            <input id="email" class="form-control" type="email" name="email" placeholder="Email@site.com" required patter="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <label for="phone" id="phone-label">Phone:</label>
+          </div>
+          <div class="col-md-8">
+            <input id="phone" class="form-control" type="phone" name="phone" placeholder="XXX-XXX-XXXX" required>
+          </div>
+        </div>
+      </div>
+  
+    <!-- Age, Sex, Nationality -->
+      <div class="col-md-6 col-sm-12">
+        <div class="row">
+          <div class="col-md-4">
+            <label for="number" id="number-label">Age:</label>
+          </div>
+          <div class="col-md-8">
+            <input id="number" class="form-control" type="number" name="yourInfo" required pattern="" min="1" max="130" placeholder="0">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <label for="dropwdown" id="sex-label">Sex:</label>
+          </div>
+          <div class="col-md-8">
+            <select id="dropdown" class="form-control">
+              <option value="">--Please choose an option--</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+              <option value="rather not answer">Rather not answer</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <label for="dropdown2" id="ethnicity-label">Ethnicity:</label>
+          </div>
+          <div class="col-md-8">
+            <select id="dropdown2" class="form-control">
+              <option value="">--Please choose an option--</option>
+              <option value="caucasian">Caucasian</option>
+              <option value="african american">African American</option>
+              <option value="hispanic latino">Hispanic/Latino</option>
+              <option value="asian">Asian</option>
+              <option value="other">Other</option>
+              <option value="rather not answer">Rather not answer</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--What best describes you?-->
+    <div class="row marginThirty">    
+      <div class="col-md-6 col-sm-12">
+        <label for="radioDescription">Which of the following best describes you?</label>  
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div><input id="radioDescription" type="radio" name="yourDescription" value="I dream of owning a pug someday."> I dream of owning a pug someday.</div>
+        <div><input id="radioDescription" type="radio" name="yourDescription" value="I have a pug or 2...or more."> I have a pug or 2...or more.</div>
+        <div><input id="radioDescription" type="radio" name="yourDescription" value="I'm on my way to get a pug!"> I'm on my way to get a pug!</div>
+        <div><input id="radioDescription" type="radio" name="yourDescription" value="I am a pug."> I am a pug.</div>
+      </div>  
+    </div>  
+
+    <!--What do you like about pugs?-->
+    <div class="row marginThirty">    
+      <div class="col-md-6 col-sm-12">
+        <label for="likes">What do you like/love about pugs?<br />(Check all that apply:)</label>  
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div><input id="likes" type="checkbox" name="likes" value="I love their face."> I love their face.</div>
+        <div><input id="likes" type="checkbox" name="likes" value="I love how small they are."> I love how small they are.</div>
+        <div><input id="likes" type="checkbox" name="likes" value="I love how chubby they are."> I love how chubby they are.</div>
+        <div><input id="likes" type="checkbox" name="likes" value="I love EVERYTHING about them!"> I love EVERYTHING about them!</div>
+      </div>  
+    </div>    
+    
+    <!--Anything else you would like to add?-->
+    <div class="row marginThirty">
+      <div class="col-md-6 col-sm-12">
+        <label for="yourComments" id="comment-label">Anything else you would like to add?</label>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <textarea id="yourComments" type="textarea" class="form-control" placeholder="Add your thoughts here."></textarea>
+      </div>
+    </div>
+    
+    <div class="submit-button marginThirty">
+      <button id="submit" class="btn btn-info" type="submit">Submit</button>
+    </div>
+    
+  </form>
+</div>
