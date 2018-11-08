@@ -1,0 +1,49 @@
+body {
+    background-color: #bca196;
+    font-family: Roboto;
+  }
+  
+  p {
+    margin-bottom: 30px;
+  }
+  
+  #survey-form {
+    width: 1000px;
+    height: auto;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 4px;
+  }
+  
+  label {
+    text-align: right;
+    width: 100%;
+    font-weight: 300;
+  }
+  
+  .row {
+    margin-bottom: 10px;
+  }
+  
+  .submit-button {
+    text-align: center;
+  }
+  
+  input, input:valid {
+    border-color: #ccc;
+  }
+  
+  input:invalid {
+    border-color: red;
+  }
+  
+  .marginThirty {
+    margin-top: 30px;
+  }
+  
+  @media (max-width: 991px) {
+    label {
+      text-align: left;
+    } 
+  }
